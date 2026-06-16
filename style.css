@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-inline: 2rem;
+  padding-block: 1.2rem;
+}
+
+nav #logo {
+  text-decoration: none;
+  color: #fd7400 !important;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+nav #logo:is(:hover, :focus) {
+  color: #abff2e;
+}
+
+.navBar {
+  display: flex;
+  gap: 2rem;
+}
+.navBar li {
+  list-style: none;
+  background: #ff7729;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.navBar li a {
+  text-decoration: none;
+  color: #fff;
+}
+.navBar li:is(:hover, :focus) {
+  /* background:#ff6138; */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+#shrimp_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+  margin-inline: 1.5rem;
+}
+.img-box {
+  margin-inline: 1rem;
+  box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.img-box:is(:hover) {
+  transform: scale(1.01);
+}
+
+.img-box p {
+  margin: 0.7rem;
+}
+
+.btn-group {
+  margin-block: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  border: transparent;
+  text-align: center;
+  background: #f27649;
+  color: #fff;
+  cursor: pointer;
+  /* box-shadow: 0 2px 4px 4px rgba(0,0,0,0.5); */
+  box-shadow: 4px 8px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+button:is(:hover, :focus) {
+  /* background:#ff6138; */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+h1 {
+  margin-block: 2rem;
+}
+
+header h1,
+header p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+#ShimpDiv {
+  padding: 2rem;
+  background: #e0e0e0;
+}
+h2 {
+  /* background: #e3e3e3; */
+  text-align:center;
+  padding: 2rem;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  display: block;
+}
+#ShimpDiv h3 {
+  background: #e3e3e3;
+  padding: 5px;
+  border-bottom: 1px solid #333;
+  display: block;
+}
+
+#shrimpMenu,
+#order-list {
+  margin: 1.5rem auto;
+  max-width: min(100%, 45rem);
+}
+
+#shrimpMenu li,
+#order-list li {
+  padding: 5px;
+  font-size: 1rem;
+  color: #212121;
+  margin-left: 1.5rem;
+}
+
+strong {
+  color: #e57373;
+  margin-right: 5px;
+  border-bottom: 1pt solid #ffccbc;
+}
+
+footer {
+  text-align: center;
+  margin-block: 1.5rem;
+  margin-inline: 0.5rem;
+}
+
+footer span {
+  color: #e57373;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+  }
+}
